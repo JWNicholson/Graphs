@@ -127,6 +127,7 @@ class Graph:
         # create an empty queue and enqueue PATH To the Starting Vertex ID
         # Create a q and enqueue starting vertex
         q = Queue()
+        #make into a list
         q.enqueue([starting_vertex])
         # Create a set of traversed vertices
         visited = set()
@@ -193,6 +194,14 @@ class Graph:
         This should be done using recursion.
         """
         # TODO
+        # visited = set()
+        # visited.add(starting_vertex)
+
+        # for v in self.get_neighbors(starting_vertex):
+        #     if v not in visited:
+        #         self.dft_recursive(v,visited)
+
+
         # create a set to store visited vertices
         if visited is None:
             visited = set()
