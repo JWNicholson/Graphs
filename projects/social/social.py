@@ -60,7 +60,7 @@ class SocialGraph:
         # !!!! IMPLEMENT ME
 
         # Add users
-        for i in range(0, num_users):
+        for i in range(num_users):
             self.add_user(f"User {i}")
 
         # Create friendships
@@ -103,8 +103,8 @@ class SocialGraph:
         while q.size() > 0:
             path = q.dequeue()#Removes an item from the queue
             user = path[-1]
-            print(f"path @ start of while: {path} ----x")
-            print(f"user @ start of while: {user} ----x")
+            # print(f"path @ start of while: {path} ----x")
+            # print(f"user @ start of while: {user} ----x")
 
             if user not in visited:
                 visited[user] = path
@@ -121,6 +121,6 @@ if __name__ == '__main__':
     sg = SocialGraph()
     sg.populate_graph(10, 8)
     print(sg.friendships)
-    print(f"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+    #print(f"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
     connections = sg.get_all_social_paths(1)
     print(connections)
