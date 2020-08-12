@@ -15,7 +15,7 @@ def earliest_ancestor(ancestors, starting_node):
             print(f"new older[1]", older[1])
            
             print(f"current dict state: ", node_fam)
-            print(F"xxxxxxxxxxxxxxxxxxxxxxxx")
+            print(f"xxxxxxxxxxxxxxxxxxxxxxxx")
             
         else:
             node_fam[older[1]].append(older[0])
