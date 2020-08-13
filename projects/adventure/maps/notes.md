@@ -3,7 +3,8 @@ A graph has 500 rooms. Each room will be visited at least once
 
 Plan - Start in room 0. Use bfs. Check nodes to up,down, right and left to see if its an 'empty' room.
  Store nodes as Current Next Visited lists or dicts. use Queu and dequeue 
- If path is not an exit, backtrace until you find one that is 
+ If path is not an exit, backtrace until you find one that is.
+ Keep track of path with dict key= current room value= previous room
 
 
  Execute - 

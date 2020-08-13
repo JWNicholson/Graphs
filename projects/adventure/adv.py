@@ -29,7 +29,29 @@ player = Player(world.starting_room)
 # traversal_path = ['n', 'n']
 traversal_path = []
 
+# set direction possibles
 
+# set Player starting room
+
+# dictionary to track visited rooms
+
+# list for storing reverse directions
+
+# Find un-explored direct
+
+# set initial graph with starting room
+
+# Decide the next direction
+
+# Check if at a dead-end. If yes, look for exits = ?
+
+# look for valid exits by backtracking
+
+# Add direction to the path and move into the next room
+
+# Track reverse direction so we can backtrack if needed
+
+# Update visted dict
 
 # TRAVERSAL TEST
 visited_rooms = set()
@@ -51,12 +73,12 @@ else:
 #######
 # UNCOMMENT TO WALK AROUND
 #######
-player.current_room.print_room_description(player)
-while True:
-    cmds = input("-> ").lower().split(" ")
-    if cmds[0] in ["n", "s", "e", "w"]:
-        player.travel(cmds[0], True)
-    elif cmds[0] == "q":
-        break
-    else:
-        print("I did not understand that command.")
+# player.current_room.print_room_description(player)
+# while True:
+#     cmds = input("-> ").lower().split(" ")
+#     if cmds[0] in ["n", "s", "e", "w"]:
+#         player.travel(cmds[0], True)
+#     elif cmds[0] == "q":
+#         break
+#     else:
+#         print("I did not understand that command.")
